@@ -1,16 +1,19 @@
 table, th, td {
     border: 2px solid rgb(91, 7, 7);
+    border-collapse: collapse;
     
 }
 
-table tr:nth-child(2){
+table tr:nth-child(2n){
  background-color: rgb(249, 21, 230);
-    color:white
+    color:rgb(0, 0, 0)
 }
 
 #customers {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
+    /*border none tira o efeito de borda vermelha colocado acima(table,th,td)*/
+    border: none;
     width: 100%;
 }
 
@@ -24,7 +27,7 @@ table tr:nth-child(2){
 
 #customers tr:nth-child(even){background-color: #f2f2f2;}
 
-#customers tr:hover {background-color: #ddd;}
+#customers tr:hover {background-color: rgb(255, 255, 255);color: rgb(255, 255, 255);}
 
 #customers td, #customers th {
     border: 1px solid #ddd;
